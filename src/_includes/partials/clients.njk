@@ -1,0 +1,18 @@
+<section id="clients">
+  <div class="section-header reveal">
+    <span class="section-label">Références</span>
+    <h2>NOS PREMIERS CLIENTS</h2>
+    <p>Structures ESS et acteurs de la transition</p>
+    <div class="section-divider"></div>
+  </div>
+  <div class="clients-logos reveal">
+    {% for item in site.clients %}
+      <div class="client-cell">
+        <div class="client-name">
+          {{ item.name }}
+          <span>{{ item.description }}</span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

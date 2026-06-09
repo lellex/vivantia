@@ -1,0 +1,15 @@
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <div class="nav-logo-circle"></div>
+    <span class="nav-logo-text">{{ site.name }}</span>
+  </a>
+  <ul class="nav-links">
+    {% for item in site.navigation %}
+      <li>
+        <a href="{{ item.url }}" class="{% if item.cta %}nav-cta{% endif %}">
+          {{ item.label }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
